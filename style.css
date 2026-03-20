@@ -1,0 +1,174 @@
+body{
+    margin: 0px 0px;
+    font-family: Arial, sans-serif;
+    margin-top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: -30px;
+    z-index: 1000;
+}
+
+.header-top{
+    background-color: #737373;
+    width: 100%;
+    height: 30px;
+}
+
+.header-content{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+}
+
+.header-left{
+    flex: 2;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center{
+    flex: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-center ul {
+    display: flex;          /* chuyển sang flexbox */
+    justify-content: center;/* căn giữa các mục */
+    gap: 60px;              /* khoảng cách giữa các li */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header-center ul li{
+    line-height: 60px;
+    font-weight: bold;
+    gap: 60px;
+}
+
+.header-right{
+    flex: 2.8;
+    display: flex;
+    align-items: center;
+}
+
+.search{
+    position: relative;
+    width: 400px; 
+    display:flex;
+    align-items: center;
+}
+
+.search input {
+    margin-left: 10px;
+    border-radius: 40px;
+    border: 1px solid #CCC;
+    width: 250px;       /* chiều rộng */
+    height: 50px;       /* chiều cao */
+    padding: 0 15px;    /* khoảng cách bên trong */
+    font-size: 15px;    /* cỡ chữ */
+    transition: border 0.3s ease;
+}
+
+.search input:hover {
+    border: 2px solid #333;
+}
+
+.search i {
+    position: absolute;
+    right: 130px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+main{
+    width: 100%;
+    height: 2000px;
+    background-color: #737373;
+    margin-top: 0px;
+}
+
+.banner-1{
+    width: 100%;
+    height: auto;
+}
+
+.banner-1 a {
+    width: 100%;
+    height: auto;
+    background-color: blue;
+}
+
+.banner-1 img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.categories{
+    width: 100%;
+    height: 115px;
+    background-color: #FFF;
+    display: flex;
+    align-items: end;
+}
+
+.cate-wrap{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.cate-item {
+    width: 75px;
+    height: 75px;
+    border-radius: 40px; /* Bạn có thể để 50% để tròn tuyệt đối */
+    border: 2px solid #7F58E9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Giúp ảnh không bị tràn ra ngoài khi zoom */
+    transition: all 0.3s ease-in-out; /* Tạo độ mượt cho khung */
+    cursor: pointer;
+}
+
+.cate-item img {
+    vertical-align: middle;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out; /* Tạo độ mượt riêng cho ảnh */
+}
+
+/* Hiệu ứng khi di chuột vào toàn bộ item */
+.cate-item:hover {
+    transform: scale(1.05); /* Phóng to nhẹ cả khung */
+    border-color: #5a39b3; /* Đổi màu viền cho sinh động (tùy chọn) */
+    box-shadow: 0 4px 15px rgba(127, 88, 233, 0.3); /* Thêm đổ bóng nhẹ */
+}
+
+.cate-item:hover img {
+    transform: scale(1.1); /* Ảnh bên trong phóng to hơn một chút tạo hiệu ứng layer */
+}
+footer{
+    width: 100%;
+    height: 558px;
+    background-color: pink;
+}
